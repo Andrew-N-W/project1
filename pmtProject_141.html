@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head>
+  <title>Document</title>
+</head>
+<body>
+  <div id="container">
+      <button>NRO1</button>
+      <button>NRO2</button>
+      <button>NRO3</button>
+  <div\>
+</body>
+<script>
+  const container1 = document.querySelector('#container');
+  let container2 = container1.childNodes
+  container2.forEach(
+      function f(currentValue, currentIndex, listObject){
+        currentValue.addEventListener('click',() => {alert(`the ${currentValue.innerHTML} has been clicked`)}) 
+      }
+  )
+</script>
+</html>
